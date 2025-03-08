@@ -36,9 +36,7 @@ export function InputForm() {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     setPrompt(data.message);
-    toast.success(
-      `你那苦涩的文字「${data.message}」已被铭记，如同时代的叹息。`
-    );
+    toast.success(`你那苦涩的文字已被铭记，如同时代的叹息。`);
   }
 
   return (
@@ -50,7 +48,7 @@ export function InputForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>留言</FormLabel>
-              <FormControl>
+              <FormControl className="mt-1">
                 <Input placeholder="请输入你的话语" {...field} />
               </FormControl>
               <FormDescription>用鲁迅风格重写你的语句</FormDescription>
