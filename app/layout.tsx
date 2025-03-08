@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
 import { Noto_Sans_SC } from "next/font/google";
 
-const noto = Noto_Sans_SC({});
+const noto = Noto_Sans_SC({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "鲁迅风格转换器",
