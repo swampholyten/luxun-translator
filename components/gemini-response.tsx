@@ -26,7 +26,7 @@ export function GeminiResponse() {
   if (!prompt) return null;
 
   return (
-    <Card className="w-full md:w-2/6 rounded-none">
+    <Card className="w-full md:w-2/6 rounded-xl">
       <CardHeader>
         <CardTitle className="text-sm font-medium text-muted-foreground">
           周树人答语：

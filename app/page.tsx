@@ -1,4 +1,4 @@
-import { InputForm } from "@/components/custom-button";
+import { InputForm } from "@/components/input-form";
 import { GeminiResponse } from "@/components/gemini-response";
 
 export default function Home() {
@@ -8,7 +8,6 @@ export default function Home() {
         <InputForm />
       </div>
 
-      {/* 直接渲染组件 */}
       <GeminiResponse />
     </div>
   );
