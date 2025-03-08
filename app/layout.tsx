@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
-import { Noto_Serif_SC } from "next/font/google";
+import { Noto_Sans_SC } from "next/font/google";
 
-const noto = Noto_Serif_SC({});
+const noto = Noto_Sans_SC({});
 
 export const metadata: Metadata = {
   title: "鲁迅风格转换器",
