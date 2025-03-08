@@ -15,7 +15,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { toast } from "sonner";
 import { usePromptStore } from "@/lib/prompt-store";
 
 const FormSchema = z.object({
@@ -36,7 +35,6 @@ export function InputForm() {
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
     setPrompt(data.message);
-    toast.success(`你那苦涩的文字已被铭记，如同时代的叹息。`);
   }
 
   return (

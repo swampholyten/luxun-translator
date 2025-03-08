@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
+import { Noto_Serif_SC } from "next/font/google";
+
+const noto = Noto_Serif_SC({});
 
 export const metadata: Metadata = {
   title: "鲁迅风格转换器",
@@ -28,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" suppressHydrationWarning>
       <head />
-      <body>
+      <body className={`antialiased ${noto.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
