@@ -49,7 +49,7 @@ export function InputForm() {
               <FormControl className="mt-1">
                 <Input placeholder="请输入你的话语" {...field} />
               </FormControl>
-              <FormDescription>用鲁迅风格重写你的语句</FormDescription>
+              <FormDescription>感受鲁迅先生的笔锋</FormDescription>
               <FormMessage />
             </FormItem>
           )}
