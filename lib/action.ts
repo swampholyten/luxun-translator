@@ -58,7 +58,7 @@ function checkDailyLimit(ip: string): string | null {
   }
 
   // 检查当日限额
-  if (record.count >= 3) {
+  if (record.count >= 10) {
     const remainHours = Math.ceil((record.resetTime - now) / 3600000);
     return `今日笔墨已尽，${remainHours}时辰后可再抒胸臆。`;
   }
